@@ -1,4 +1,4 @@
-import DarkMode from '../DarkMode.jsx';
+import DarkMode from ' @/lib/DarkMode';
 import { Menu, School } from "lucide-react";
 import React, { useEffect } from "react";
 import {
