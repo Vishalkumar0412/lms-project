@@ -1,6 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
-const COURSE_PROGRESS_API = import.meta.env.VITE_COURSE_PROGRESS_API;
+// import dotenv from 'dotenv'
+// dotenv.config({})
+const COURSE_PROGRESS_API =   `${import.meta.env.VITE_BACK_END_URL}/api/v1/progress/`;
 
 export const courseProgressApi = createApi({
   reducerPath: "courseProgressApi",

@@ -26,6 +26,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useLogoutUserMutation } from "@/features/api/authApi";
 import { toast } from "sonner";
 import { useSelector } from "react-redux";
+import DarkMode from "@/lib/DarkMode";
 
 
 const Navbar = () => {
@@ -59,6 +60,7 @@ const Navbar = () => {
         <div className="flex items-center gap-8">
           {user ? (
             <DropdownMenu>
+              <DarkMode/>
               <DropdownMenuTrigger asChild>
                 <Avatar>
                   <AvatarImage
@@ -97,6 +99,7 @@ const Navbar = () => {
                 Login
               </Button>
               <Button onClick={() => navigate("/login")}>Signup</Button>
+              <DarkMode/>
             </div>
           )}
         
