@@ -1,4 +1,4 @@
-import DarkMode from ' @/lib/DarkMode';
+
 import { Menu, School } from "lucide-react";
 import React, { useEffect } from "react";
 import {
@@ -26,6 +26,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useLogoutUserMutation } from "@/features/api/authApi";
 import { toast } from "sonner";
 import { useSelector } from "react-redux";
+import DarkMode from "@/lib/DarkMode";
 
 const Navbar = () => {
   const { user } = useSelector((store) => store.auth);
