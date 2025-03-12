@@ -1,3 +1,4 @@
+import DarkMode from '../DarkMode.jsx';
 import { Menu, School } from "lucide-react";
 import React, { useEffect } from "react";
 import {
@@ -11,7 +12,6 @@ import {
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import DarkMode from '../DarkMode.jsx';
 import {
   Sheet,
   SheetClose,
