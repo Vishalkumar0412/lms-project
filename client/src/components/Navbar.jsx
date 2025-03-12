@@ -26,7 +26,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useLogoutUserMutation } from "@/features/api/authApi";
 import { toast } from "sonner";
 import { useSelector } from "react-redux";
-import DarkMode from "@/lib/DarkMode";
+
 
 const Navbar = () => {
   const { user } = useSelector((store) => store.auth);
@@ -99,7 +99,7 @@ const Navbar = () => {
               <Button onClick={() => navigate("/login")}>Signup</Button>
             </div>
           )}
-          <DarkMode />
+        
         </div>
       </div>
       {/* Mobile device  */}
@@ -130,7 +130,7 @@ const MobileNavbar = ({user}) => {
       <SheetContent className="flex flex-col">
         <SheetHeader className="flex flex-row items-center justify-between mt-2">
           <SheetTitle> <Link to="/">E-Learning</Link></SheetTitle>
-          <DarkMode />
+       
         </SheetHeader>
         <Separator className="mr-2" />
         <nav className="flex flex-col space-y-4">
